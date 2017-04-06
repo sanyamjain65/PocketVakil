@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_white"
+    android:id="@+id/rel"
+    tools:context="com.app.pocketvakil.activities.Faq_Question">
+
+
+    <com.app.pocketvakil.custom.CustomTextView
+        android:id="@+id/tv_ques"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:paddingBottom="15dp"
+        app:font="@string/OpenSans_Reguler"
+        android:paddingTop="15dp"
+        android:textColor="@color/app_blue"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

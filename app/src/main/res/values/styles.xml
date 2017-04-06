@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/checkin_orange</item>
+        <item name="colorControlNormal">@color/timeline_line</item>
+        <item name="colorControlActivated">@color/timeline_line</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorControlHighlight">@color/timeline_line</item>
+        <item name="android:windowAnimationStyle">@null</item>
+
+    </style>
+
+
+
+
+    <style name="AppThemeAnim" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/checkin_orange</item>
+        <item name="colorControlNormal">@color/timeline_line</item>
+        <item name="colorControlActivated">@color/timeline_line</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorControlHighlight">@color/timeline_line</item>
+
+
+    </style>
+
+    <style name="spinner_style" >
+    <item name="android:background">@drawable/spinner_bg</item>
+    <item name="android:layout_marginLeft">10dp</item>
+    <item name="android:layout_marginRight">10dp</item>
+    <item name="android:layout_marginBottom">10dp</item>
+    <item name="android:paddingLeft">8dp</item>
+    <item name="android:paddingTop">5dp</item>
+    <item name="android:paddingBottom">5dp</item>
+    </style>
+
+
+</resources>

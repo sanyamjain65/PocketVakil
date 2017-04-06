@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.app.pocketvakil.activities.Terms_Condition_Activity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/toolbar"
+       android:padding="10dp"
+       android:text="Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort  und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren">
+
+
+
+
+   </TextView>
+
+
+</RelativeLayout>

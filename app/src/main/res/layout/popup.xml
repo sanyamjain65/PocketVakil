@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginTop="@dimen/layout_margin_top">
+
+
+    <com.app.pocketvakil.custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_faq"
+        android:textSize="@dimen/faq_text_size"
+        app:font="@string/OpenSans_Reguler"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/app_black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_faq"
+
+        />
+
+    <View
+        android:id="@+id/iv_view"
+        android:layout_width="wrap_content"
+        android:layout_height=".5dp"
+        android:layout_marginTop="@dimen/view_margin"
+
+        android:layout_marginBottom="@dimen/login_password_view_margin_bottom"
+        android:background="@color/faq_view_color">
+    </View>
+
+
+    <com.app.pocketvakil.custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_switch_to_hindi"
+        android:textSize="@dimen/faq_text_size"
+        android:layout_marginLeft="10dp"
+        app:font="@string/OpenSans_Reguler"
+        android:textColor="@color/app_black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-5dp"
+        android:id="@+id/tv_switch_to_hindi"
+
+        />
+
+    <View
+        android:id="@+id/tv_switch_to_hindi_view"
+        android:layout_width="wrap_content"
+        android:layout_height=".5dp"
+        android:layout_marginTop="@dimen/view_margin"
+
+        android:layout_marginBottom="@dimen/login_password_view_margin_bottom"
+        android:background="@color/faq_view_color">
+    </View>
+
+
+
+
+
+
+    <com.app.pocketvakil.custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_logout"
+        android:textColor="@color/app_black"
+        android:layout_marginLeft="10dp"
+        app:font="@string/OpenSans_Reguler"
+        android:textSize="@dimen/faq_text_size"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/logout_margin_top"
+        android:id="@+id/tv_logout"
+
+        />
+</LinearLayout>

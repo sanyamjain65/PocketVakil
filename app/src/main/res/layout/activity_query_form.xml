@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rel_quary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView_main"
+        android:layout_below="@+id/toolbar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relmain">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/spinner_style"
+        android:paddingTop="8dp"
+        android:overlapAnchor="false"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="@dimen/query_form_margin"
+        android:layout_marginTop="8dp"
+
+
+        />
+    <View
+        android:id="@+id/spinner_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="-25dp"
+        android:layout_marginLeft="@dimen/query_form_margin"
+        android:layout_marginRight="@dimen/query_form_margin"
+        android:background="@color/faq_view_color"/>
+
+        <com.app.pocketvakil.custom.CustomEditText
+            android:id="@+id/tv_another_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_view"
+            android:layout_marginTop="@dimen/query_title_top_margin"
+            android:layout_marginLeft="@dimen/query_form_margin"
+            android:layout_marginRight="@dimen/query_form_margin"
+            app:font="@string/OpenSans_Reguler"
+            android:hint="@string/quary_specify"
+            android:textColorHint="@color/text_hint_color"
+            android:textSize="@dimen/query_title_text_size"
+            android:paddingLeft="12dip"
+            android:background="@null"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:maxLength="30"
+            android:textColor="@color/app_blue"/>
+
+        <View
+            android:id="@+id/another_field_view"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_another_field"
+            android:layout_marginLeft="@dimen/query_form_margin"
+            android:layout_marginRight="@dimen/query_form_margin"
+            android:background="@color/faq_view_color"
+            android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+-----------------------------------------------------------
+    <com.app.pocketvakil.custom.CustomEditText
+        android:id="@+id/tv_query_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/another_field_view"
+        android:layout_marginTop="@dimen/query_title_top_margin"
+        android:layout_marginLeft="@dimen/query_form_margin"
+        android:layout_marginRight="@dimen/query_form_margin"
+        app:font="@string/OpenSans_Reguler"
+        android:hint="@string/quary_title"
+        android:textColorHint="@color/text_hint_color"
+        android:textSize="@dimen/query_title_text_size"
+        android:paddingLeft="12dip"
+        android:background="@null"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:textColor="@color/app_blue"/>
+
+    <View
+        android:id="@+id/query_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_query_title"
+        android:layout_marginLeft="@dimen/query_form_margin"
+        android:layout_marginRight="@dimen/query_form_margin"
+        android:background="@color/faq_view_color"
+        android:layout_marginTop="5dp"/>
+
+    <com.app.pocketvakil.custom.CustomTextView
+        android:id="@+id/tv_your_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quary_your_quary"
+        app:font="@string/OpenSans_Reguler"
+        android:textSize="17sp"
+
+        android:layout_below="@+id/query_title_view"
+        android:layout_marginLeft="@dimen/your_query_margin_left"
+        android:layout_marginTop="@dimen/your_query_margin_top"
+        android:textColor="@color/app_blue"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_query"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tv_your_query"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/query_text_background"
+        android:layout_marginLeft="@dimen/query_form_margin"
+        android:layout_marginRight="@dimen/query_form_margin">
+
+
+
+    <com.app.pocketvakil.custom.CustomEditText
+        android:id="@+id/et_query"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:textColor="@color/app_blue"
+        android:background="@null"
+        app:font="@string/OpenSans_Reguler"
+        android:paddingLeft="4dp"
+        android:hint="@string/quary_whats_your_ques"
+        android:textSize="@dimen/query_title_text_size"
+        android:textColorHint="@color/splash_text"
+        android:maxLines = "10"
+        android:scrollbars = "vertical"
+        />
+
+
+    </RelativeLayout>
+
+
+
+
+    <com.app.pocketvakil.custom.CustomTextView
+        android:layout_below="@+id/rl_query"
+        android:layout_width="207dp"
+        android:layout_height="44dp"
+        android:text="@string/quary_send"
+        android:background="@drawable/send_green_button"
+        android:layout_centerInParent="true"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:id="@+id/tv_quary_send"
+        app:font="@string/OpenSans_Semibold"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="45dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:buttonTint="@color/app_blue"
+        android:layout_below="@+id/rl_query"
+        android:layout_alignLeft="@+id/tv_quary_send"
+        android:layout_alignStart="@+id/tv_quary_send"
+         />
+
+    <com.app.pocketvakil.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font="@string/OpenSans_Reguler"
+        android:textSize="15sp"
+        android:id="@+id/tv_tc"
+        android:text="@string/quary_TC"
+        android:layout_below="@+id/rl_query"
+        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_toRightOf="@+id/checkBox"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

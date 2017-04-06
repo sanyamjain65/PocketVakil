@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    android:id="@+id/rel_login"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/iv_login_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/splash_logo"/>
+
+
+
+
+    <com.app.pocketvakil.custom.CustomEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:textColor="@color/app_blue"
+        android:hint="@string/enter_email"
+        app:font="@string/OpenSans_Reguler"
+        android:gravity="center"
+        android:textColorHint="@color/text_hint_color"
+        android:background="@null"
+        android:textSize="@dimen/login_email_text"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:id="@+id/iv_email_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       android:layout_below="@+id/et_email"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/login_margin"
+        android:layout_marginRight="@dimen/login_margin"
+        android:background="@color/app_blue">
+    </View>
+
+    <com.app.pocketvakil.custom.CustomEditText
+        android:id="@+id/et_password"
+       android:layout_below="@+id/iv_email_view"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        app:font="@string/OpenSans_Reguler"
+        android:ellipsize="end"
+        android:textSize="@dimen/login_email_text"
+        android:textColorHint="@color/text_hint_color"
+        android:background="@null"
+        android:textColor="@color/app_blue"
+        android:gravity="center"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:imeOptions="actionDone"
+        />
+    <View
+        android:id="@+id/iv_pass_view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="@dimen/login_margin"
+        android:layout_marginRight="@dimen/login_margin"
+        android:layout_marginBottom="@dimen/login_password_bottom_margin"
+        android:background="@color/app_blue">
+    </View>
+    <RelativeLayout
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:id="@+id/relshowloginpwd"
+        android:layout_marginLeft="0dp"
+        android:layout_alignBottom="@+id/iv_pass_view"
+        android:layout_toRightOf="@+id/et_password"
+        android:layout_toEndOf="@+id/et_password"
+        android:layout_marginBottom="1dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_pwdshow"
+            android:layout_marginBottom="8dp"
+           android:layout_centerInParent="true"
+            android:src="@drawable/eye_grey"
+            />
+
+    </RelativeLayout>
+
+
+    <com.app.pocketvakil.custom.CustomTextView
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_grey_button"
+       android:layout_below="@+id/iv_pass_view"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/login_button_bottom_margin"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textAllCaps="false"
+        app:font="@string/OpenSans_Semibold"
+        android:textSize="@dimen/login_email_text"/>
+
+    <com.app.pocketvakil.custom.CustomTextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_below="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/login_forgot_password_text"
+        android:textColor="@color/app_blue"
+        android:text="@string/forgot_password"
+        app:font="@string/OpenSans_Reguler"
+        android:layout_centerHorizontal="true"
+       />
+
+    <View
+        android:id="@+id/iv_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:layout_marginBottom="1dp"
+        android:background="@color/app_blue"
+        android:layout_above="@+id/rl_sign_up"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/rl_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <com.app.pocketvakil.custom.CustomTextView
+            android:id="@+id/tv_sign_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_blue"
+            app:font="@string/OpenSans_Reguler"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sign_up_text_size"
+            android:text="@string/sign_up_text"
+            />
+
+        <com.app.pocketvakil.custom.CustomTextView
+            android:id="@+id/tv_sign_up"
+            android:layout_toRightOf="@+id/tv_sign_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/app_blue"
+            app:font="@string/OpenSans_Reguler"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/sign_up_text_size"
+            android:text="@string/sign_up_text_new" />
+
+        <View
+            android:id="@+id/sign_up_view"
+            android:layout_width="@dimen/sign_up_view_width"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_sign_up_text"
+            android:layout_below="@+id/tv_sign_up"
+            android:background="@color/app_blue"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
